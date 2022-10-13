@@ -403,6 +403,7 @@ const clearCanvas = () => {
   }
 };
 
+//api to check for duplicates
 const checkDuplicate = (text) => {
   return corretGuesses.includes(text);
 };
