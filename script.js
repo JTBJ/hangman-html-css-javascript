@@ -238,11 +238,19 @@ form.addEventListener("submit", (event) => {
   const text = document.getElementById("guess").value;
   if (validateLength(text)) {
     if (checkLetter(text)) {
-      incrementScore();
-      showCorrectLetter(text);
-      if (isGameWon()) {
-        gameOver("winner");
+      if (!checkDuplicate(text)) {
+        console.log("no duplicate");
+
+        incrementScore();
+        showCorrectLetter(text);
+
+        if (isGameWon()) {
+          gameOver("winner");
+        }
+      } else {
+        alert("Duplicate value");
       }
+
       console.log(text);
     } else {
       alert(`The letter "${text}" was not found`);
@@ -393,6 +401,10 @@ const clearCanvas = () => {
   if (isGameWon || isGameLost) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   }
+};
+
+const checkDuplicate = (text) => {
+  return corretGuesses.includes(text);
 };
 
 selectGameWord();
