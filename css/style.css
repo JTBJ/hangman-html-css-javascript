@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+#title-instruction {
+  margin-top: 30px;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+p,
+#title-instruction,
+#no-of-guesses,
+#points,
+#guesses-message,
+#points-message,
+#form #guess {
+  font-family: cursive;
+}
+
+#canvas {
+  height: 100%;
+  width: 800px;
+}
+
+#placeholder {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  margin-top: 50px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.correct-guess {
+  width: 30px;
+  height: 30px;
+  color: black;
+  background-color: white;
+  margin: 15px;
+  padding-top: 10px;
+  font-weight: bolder;
+}
+
+#points {
+  position: absolute;
+  background-color: wheat;
+  height: 50px;
+  width: 20%;
+  right: 5%;
+  top: 190px;
+  color: black;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 28px;
+  justify-content: center;
+  padding-top: 0.5rem;
+  box-shadow: 3px 2px 2px 2px rgba(224, 235, 241, 0.936);
+}
+
+#no-of-guesses {
+  position: absolute;
+  background-color: wheat;
+  height: 50px;
+  width: 20%;
+  left: 5%;
+  top: 190px;
+  color: black;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 28px;
+  justify-content: center;
+  padding-top: 0.5rem;
+  box-shadow: 3px 2px 2px 2px rgba(224, 235, 241, 0.936);
+}
+
+#points-message {
+  position: absolute;
+  height: 50px;
+  width: 20%;
+  right: 5%;
+  top: 150px;
+  font-size: 28px;
+}
+
+#guesses-message {
+  position: absolute;
+  height: 50px;
+  width: 20%;
+  left: 5%;
+  top: 150px;
+  font-size: 28px;
+}
+
+#restart {
+  position: absolute;
+  background-color: blue;
+  color: white;
+  width: 5.5rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  right: 6%;
+  top: 6%;
+  cursor: pointer;
+  box-shadow: 3px 2px 2px 2px rgba(195, 175, 216, 0.276);
+  z-index: 9;
+}
+
+#main-scene {
+  background-color: black;
+}
+
+#canvas-container {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+#canvas {
+  width: 100%;
+  height: 80%;
+  margin-top: 5%;
+}

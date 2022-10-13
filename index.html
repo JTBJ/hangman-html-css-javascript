@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="main-scene">
+      <div id="title-instruction">
+        <h1>Hangman</h1>
+        <p>You will be given instructions to play the game here!</p>
+      </div>
+
+      <form id="form">
+        <label for="guess">Guess a Letter</label>
+        <input type="text" name="guess" id="guess" />
+        <input type="submit" id="submit" />
+      </form>
+
+      <div>
+        <br />
+        <hr />
+        <br />
+
+        <img src="/images/hgmn_1.png" class="hangman" />
+
+        <div id="points">0</div>
+        <div id="no-of-guesses">7</div>
+
+        <div id="points-message">Score</div>
+        <div id="guesses-message">Attemps Left</div>
+
+        <div id="placeholder"></div>
+      </div>
+    </div>
+
+    <button id="restart">Restart</button>
+
+    <div id="canvas-container">
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
